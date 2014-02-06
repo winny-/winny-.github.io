@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Morden';
+    src: url('../fonts/Morden.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Morden.woff') format('woff'),
+    url('../fonts/Morden.ttf') format('truetype'),
+    url('../fonts/Morden.svg#Morden') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
