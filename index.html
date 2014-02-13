@@ -2,79 +2,46 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="stylesheets/Morden.css"/>
-	<link rel="stylesheet" type="text/css" href="stylesheets/Lobster.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="favicon.png">
 	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
 	body {
-		font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: 'Roboto', Helvetica Nue, Helvetica, sans-serif;
+		color: #000;
+		background-color: #FFF;
 	}
-	a {
-		color:#3B95A4;
-		text-decoration:none;
+	p, ul {
+		font-weight: 100;
+		font-size: 6vw;
 	}
-	table {
-		border-style:none;
-		width: 500px;
-		margin: 0 auto;
+	ul {
+		list-style: none;
 	}
-	tr td:first-child {
-		padding-right:10px;
-		text-align: right;
-		font-size: 2em;
-		font-family: 'Morden', sans-serif;
-	}
-	tr td:last-child {
-		padding-left:10px;
-		text-align: left;
-	}
-	td {
-		max-width:200px;
-	}
-	table tr:first-child td {
-		padding-bottom: 25px;
-	}
-	table tr:last-child td {
-		padding-top: 25px;
-	}
-	.winstonone {
-		border-bottom: 4px solid #EE1D25;
-		line-height: .65em;
-		font-size: 4em;
-		-webkit-box-shadow: 0 4px 2px -2px gray;
-		-moz-box-shadow: 0 4px 2px -2px gray;
-		box-shadow: 0 4px 2px -2px gray;
+	p:last-of-type {
+		margin-bottom: .5em;
 	}
 	h1 {
-		padding: 0;
-		margin: 0 auto;
-		width:6em;
+		font-weight: 100;
+		font-size: 10vw;
+		margin: .10em 0;
 	}
-	.head-space {
-		padding:20px;
+	a {
+		text-decoration: none;
+		color: #00BFFF;
 	}
-	.middle-space {
-		padding:20px;
+	a:visited {
+		color: #007BA7;
 	}
-	.winston {
-		font-family: 'Lobster', sans-serif;
-		color: #2B73D6;
-	}
-	.one {
-		font-family: 'Morden', sans-serif;
-		color: #D6CC2B;
-	}
-	.about {
-		color: #D6CC2B;
-	}
-	.apps {
-		color: #2B73D6;
-	}
-	.contact {
-		color: #EE1D25;
+	p, h1, ul {
+		text-align: center;
 	}
 	#content {
-		max-width: 600px;
 		margin: 0 auto;
+		max-width: 80%;
 	}
 	</style>
 	<title>WinstonOne</title>
@@ -82,29 +49,22 @@
 
 <body>
 	<div id="content">
-		<div class="head-space"></div>
-		<h1 class="winstonone"><span class="winston">Winston</span><span class="one">One</span></h1>
-		<div class="middle-space"></div>
-		<table>
-			<tr>
-				<td class="about">About</td>
-				<td>
-					My name is Winston. I code stuff.
-				</td>
-			</tr>
-			<tr>
-				<td class="apps">Apps</td>
-				<td>
-					I made <a href="Apps/Stronghold%20Locator/">this</a>.
-				</td>
-			</tr>
-			<tr>
-				<td class="contact">Contact</td>
-				<td>
-					<a href="mailto:WinstonOne@fastmail.fm">Click here</a> to email me.
-				</td>
-			</tr>
-		</table>
+		<h1>WinstonOne</h1>
+		<p>My name is Winston. I craft code. <a href="mailto:WinstonOne@fastmail.fm">I am available for hire!</a><p>
+		<ul>
+			<li><a href="https://github.com/winny-">GitHub</a></li>
+<!-- 			<li><a href="#">Résumé</a></li> -->
+			<li><a href="Apps/Stronghold%20Locator/">Apps</a></li>
+<!-- 			<li><a href="#">Portfolio</a></li> -->
+		</ul>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script>
+	causeRepaintsOn = $("h1, h2, h3, p, ul");
+
+	$(window).resize(function() {
+	  causeRepaintsOn.css("z-index", 1);
+	});
+	</script>
 </body>
 </html>
