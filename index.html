@@ -1,1 +1,79 @@
-Hello, world!
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<script src="scripts/ga.js"></script>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	html, body, #content {
+		height: 100%;
+	}
+	body {
+		font-family: 'Roboto', Helvetica Nue, Helvetica, sans-serif;
+		color: #000;
+		background-color: #FFF;
+	}
+	p, ul {
+		font-weight: 100;
+		font-size: 60px;
+		font-size: 8vmin;
+	}
+	ul {
+		list-style: none;
+	}
+	p:last-of-type {
+		margin-bottom: .5em;
+	}
+	h1 {
+		font-weight: 100;
+		font-size: 100px;
+		font-size: 12vmin;
+		margin: .10em 0;
+	}
+	a {
+		text-decoration: none;
+		color: #00BFFF;
+	}
+	a:visited {
+		color: #007BA7;
+	}
+	a:hover, a:focus {
+		border-bottom: solid .05em;
+	}
+	p, h1, ul {
+		text-align: center;
+	}
+	#content {
+		margin: 0 auto;
+		max-width: 80%;
+	}
+	</style>
+	<title>WinstonOne</title>
+</head>
+
+<body>
+	<div id="content">
+		<h1>WinstonOne</h1>
+		<p>My name is Winston. I craft code. <a href="mailto:WinstonOne@fastmail.fm">I am available for hire!</a><p>
+		<ul>
+			<li><a href="https://github.com/winny-">GitHub</a></li>
+			<li><a href="http://resume.github.io/?winny-">GitHub Résumé</a></li>
+<!-- 			<li><a href="#">Résumé</a></li> -->
+			<li><a href="Apps/Stronghold%20Locator/">Apps</a></li>
+<!-- 			<li><a href="#">Portfolio</a></li> -->
+			<li><a href="//blog.WinstonOne.com/">Blog</a></li>
+		</ul>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script>
+	causeRepaintsOn = $("h1, h2, h3, p, ul");
+
+	$(window).resize(function() {
+	  causeRepaintsOn.css("z-index", 1);
+	});
+	</script>
+</body>
